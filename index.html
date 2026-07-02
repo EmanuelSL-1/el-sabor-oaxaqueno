@@ -13,7 +13,7 @@ body{margin:0;font-family:system-ui,sans-serif;background:var(--beige);color:var
 .nav{position:fixed;top:0;width:100%;z-index:99;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;transition:.4s;background:rgba(0,0,0,.08)}
 .nav.scrolled{background:rgba(74,44,26,.95)}
 .logo{display:flex;gap:10px;align-items:center;color:#fff;font-weight:700}
-.hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 60px;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),url(".hero{
+.hero{
 
     min-height:100vh;
 
@@ -31,8 +31,8 @@ body{margin:0;font-family:system-ui,sans-serif;background:var(--beige);color:var
 
     background-size:cover;
 
-    background-position:center;,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Crect width='100%25' height='100%25' fill='%23C96A3D'/%3E%3Ccircle cx='300' cy='300' r='180' fill='%23D97706' opacity='.6'/%3E%3Ccircle cx='1200' cy='500' r='250' fill='%234F6F52' opacity='.5'/%3E%3C/svg%3E");background-size:cover;color:#fff}
-.hero-content{max-width:700px}
+    background-position:center;
+}
 h1{font-size:clamp(2.5rem,6vw,5rem);margin:0}
 .btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;margin:8px;transition:.3s}
 .primary{background:var(--naranja);color:#fff}
@@ -110,7 +110,10 @@ footer{background:var(--cafe);color:#fff;padding:40px 5%}
 <h2>Nuestra Historia</h2>
 <p>Desde 1998, El Sabor Oaxaqueño ha compartido recetas tradicionales transmitidas por generaciones, llevando la riqueza culinaria de Oaxaca a cada mesa.</p>
 </div>
-<div class="imgph"></div>
+<img
+src="images/NuestraHistoria.jpg"
+alt="Cocina tradicional oaxaqueña"
+class="section-image">
 </section>
 
 <section id="menu">
