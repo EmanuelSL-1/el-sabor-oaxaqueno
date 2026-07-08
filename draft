@@ -200,829 +200,12 @@ img:hover{
     padding:10px 0;
   }
 }
-/* ======================================
-   TESTIMONIOS
-====================================== */
-
-
-.testimonials-section{
-
-padding:100px 0;
-
-background:white;
-
-}
-
-
-
-.testimonial-header{
-
-text-align:center;
-
-margin-bottom:50px;
-
-}
-
-
-
-.testimonial-header h2{
-
-font-size:2.5rem;
-
-color:var(--cafe);
-
-}
-
-
-
-
-.testimonial-slider{
-
-position:relative;
-
-display:flex;
-
-align-items:center;
-
-}
-
-
-
-.testimonial-window{
-
-overflow:hidden;
-
-width:100%;
-
-}
-
-
-
-.testimonial-track{
-
-display:flex;
-
-transition:.6s ease;
-
-}
-
-
-
-.testimonial-card{
-
-min-width:100%;
-
-padding:45px;
-
-text-align:center;
-
-background:var(--beige);
-
-border-radius:25px;
-
-box-shadow:
-
-0 15px 35px rgba(0,0,0,.1);
-
-}
-
-
-
-.stars{
-
-color:var(--naranja);
-
-font-size:28px;
-
-letter-spacing:5px;
-
-margin-bottom:20px;
-
-}
-
-
-
-.testimonial-card p{
-
-font-size:1.2rem;
-
-font-style:italic;
-
-line-height:1.7;
-
-}
-
-
-
-.testimonial-card h4{
-
-margin-top:25px;
-
-color:var(--cafe);
-
-}
-
-
-
-.testimonial-card span{
-
-opacity:.7;
-
-}
-
-
-
-
-.testimonial-btn{
-
-position:absolute;
-
-z-index:2;
-
-width:45px;
-
-height:45px;
-
-border-radius:50%;
-
-border:none;
-
-background:var(--cafe);
-
-color:white;
-
-font-size:28px;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-
-
-.testimonial-btn:hover{
-
-transform:scale(1.15);
-
-background:var(--naranja);
-
-}
-
-
-
-.prev-testimonial{
-
-left:-15px;
-
-}
-
-
-
-.next-testimonial{
-
-right:-15px;
-
-}
-
-
-
-
-
-/* ======================================
-   CONTADORES
-====================================== */
-
-
-.stats-section{
-
-padding:80px 0;
-
-background:var(--cafe);
-
-color:white;
-
-}
-
-
-
-.stats-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-}
-
-
-
-.stat-card{
-
-text-align:center;
-
-}
-
-
-
-.stat-card h3{
-
-font-size:3rem;
-
-color:var(--naranja);
-
-}
-
-
-
-.stat-card p{
-
-font-size:1.1rem;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.stats-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.testimonial-card{
-
-padding:30px 20px;
-
-}
-
-
-
-}
 </style>
 
-<!-- ============= parte1a.6 --->
-<style>
-  /* ======================================
-   RESERVACIONES
-====================================== */
+<!-- =================================================================
+     style 1.a3
+==================================================================== -->
 
-.reservation-section{
-padding:100px 0;
-background:#fff;
-}
-
-.reservation-header{
-text-align:center;
-margin-bottom:45px;
-}
-
-.reservation-header h2{
-font-size:2.5rem;
-color:var(--cafe);
-}
-
-.reservation-header p{
-margin-top:10px;
-opacity:.75;
-}
-
-.reservation-box{
-background:var(--beige);
-padding:40px;
-border-radius:30px;
-box-shadow:0 20px 45px rgba(0,0,0,.12);
-}
-
-.form-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.form-group{
-display:flex;
-flex-direction:column;
-gap:8px;
-}
-
-.form-group label{
-font-weight:600;
-color:var(--cafe);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-padding:14px;
-border-radius:15px;
-border:1px solid rgba(74,44,26,.2);
-font-size:1rem;
-background:white;
-outline:none;
-transition:.3s;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-border-color:var(--naranja);
-transform:scale(1.02);
-}
-
-textarea{
-min-height:120px;
-resize:none;
-}
-
-.full{
-margin-top:20px;
-}
-
-.submit-btn{
-margin-top:25px;
-border:none;
-}
-
-
-/* MODAL */
-
-.modal{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.55);
-display:none;
-align-items:center;
-justify-content:center;
-z-index:2000;
-}
-
-.modal.active{
-display:flex;
-}
-
-.modal-content{
-background:white;
-padding:40px;
-border-radius:25px;
-text-align:center;
-max-width:400px;
-animation:modalIn .4s ease;
-}
-
-.modal-content h3{
-color:var(--cafe);
-font-size:1.8rem;
-margin-bottom:15px;
-}
-
-@keyframes modalIn{
-from{
-opacity:0;
-transform:translateY(30px) scale(.9);
-}
-to{
-opacity:1;
-transform:translateY(0) scale(1);
-}
-}
-
-
-@media(max-width:768px){
-
-.form-grid{
-grid-template-columns:1fr;
-}
-
-.reservation-box{
-padding:25px;
-}
-
-}
-</style>
-
-<style>
-/* ======================================
-   UBICACIÓN
-====================================== */
-
-.location-section{
-padding:100px 0;
-background:var(--beige);
-}
-
-.location-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.location-info h2{
-font-size:2.5rem;
-color:var(--cafe);
-margin-bottom:20px;
-}
-
-.location-info p{
-line-height:1.7;
-margin-bottom:25px;
-}
-
-.info-item{
-display:flex;
-flex-direction:column;
-gap:5px;
-margin-bottom:18px;
-}
-
-.info-item strong{
-color:var(--naranja);
-}
-
-
-/* MAPA */
-
-.map-card{
-background:white;
-padding:15px;
-border-radius:30px;
-box-shadow:0 20px 45px rgba(0,0,0,.15);
-}
-
-
-.fake-map{
-height:420px;
-border-radius:22px;
-background:
-linear-gradient(
-135deg,
-#d9c7ad,
-#f5e6d3
-);
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-position:relative;
-overflow:hidden;
-}
-
-
-.fake-map:before{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-border-radius:50%;
-border:2px dashed rgba(74,44,26,.2);
-}
-
-
-.map-pin{
-font-size:45px;
-z-index:2;
-animation:pulsePin 2s infinite;
-}
-
-
-.map-label{
-margin-top:15px;
-background:white;
-padding:10px 20px;
-border-radius:20px;
-box-shadow:0 10px 20px rgba(0,0,0,.1);
-z-index:2;
-}
-
-
-@keyframes pulsePin{
-
-50%{
-transform:scale(1.15);
-}
-
-}
-
-
-/* ======================================
-   FOOTER
-====================================== */
-
-.footer{
-background:var(--cafe);
-color:white;
-padding:60px 0 20px;
-}
-
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-}
-
-
-.footer-logo{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-
-.footer h4{
-color:var(--naranja);
-margin-bottom:15px;
-}
-
-
-.footer p{
-opacity:.85;
-line-height:1.6;
-}
-
-
-.social-links{
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-
-.social-links a{
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-
-.social-links a:hover{
-color:var(--naranja);
-transform:translateX(5px);
-}
-
-
-.footer-bottom{
-text-align:center;
-margin-top:40px;
-padding-top:20px;
-border-top:1px solid rgba(255,255,255,.15);
-opacity:.7;
-}
-
-
-@media(max-width:768px){
-
-.location-grid{
-grid-template-columns:1fr;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
-.fake-map{
-height:300px;
-}
-
-}
-</style>
-  
-</head>
-  <body>
-
-<!-- =========================
-     NAVBAR
-========================= -->
-<nav class="navbar" id="navbar">
-
-  <!-- LOGO -->
-  <div class="logo">
-    <!-- SVG logo simple premium -->
-    <svg width="34" height="34" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="48" fill="#C96A3D"/>
-      <path d="M30 60 Q50 25 70 60" stroke="white" stroke-width="6" fill="none"/>
-      <circle cx="50" cy="52" r="10" fill="white"/>
-    </svg>
-    <span>El Sabor Oaxaqueño</span>
-  </div>
-
-  <!-- LINKS -->
-  <div class="nav-links" id="navLinks">
-    <a href="#historia">Nuestra Historia</a>
-    <a href="#menu">Sabores</a>
-    <a href="#galeria">Momentos</a>
-    <a href="#reserva">Reservar</a>
-  </div>
-
-  <!-- HAMBURGUESA -->
-  <div class="menu-toggle" id="menuToggle">☰</div>
-
-</nav>
-
-<!-- =========================
-     HERO
-========================= -->
-<header class="hero">
-
-  <div class="container hero-content reveal">
-
-    <h1>Auténticos sabores de Oaxaca en cada platillo</h1>
-
-    <p>
-      Tradición, cultura y gastronomía en una experiencia única que despierta los sentidos.
-    </p>
-
-    <div style="margin-top:25px; display:flex; gap:15px; flex-wrap:wrap;">
-
-      <a href="#reserva" class="btn btn-primary">
-        Reservar Ahora
-      </a>
-
-      <a href="#menu" class="btn btn-outline">
-        Ver Menú
-      </a>
-
-    </div>
-
-  </div>
-
-</header>
-
-<!-- =========================
-     NUESTRO INICIO DE HISTORIA (BASE)
-========================= -->
-<section id="historia" style="padding:100px 0;">
-
-  <div class="container">
-
-    <div class="reveal" style="text-align:center; margin-bottom:40px;">
-      <h2 style="font-size:2.5rem; color:var(--cafe);">
-        Nuestra Historia
-      </h2>
-
-      <p style="margin-top:10px; opacity:.8;">
-        Tradición que nace desde 1998 y sigue viva en cada platillo
-      </p>
-    </div>
-
-    <div class="reveal" style="
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
-      align-items:center;
-    ">
-
-      <!-- TEXTO -->
-      <div>
-        <p style="font-size:1.1rem; line-height:1.7;">
-          Desde 1998, El Sabor Oaxaqueño ha compartido recetas tradicionales
-          transmitidas por generaciones, llevando la riqueza culinaria de Oaxaca
-          a cada mesa.
-        </p>
-
-        <div style="margin-top:20px;">
-          <a href="#menu" class="btn btn-primary">
-            Explorar Sabores
-          </a>
-        </div>
-      </div>
-
-      <!-- IMAGEN PLACEHOLDER -->
-      <div>
-        <img src="images/historia/historia.webp" alt="Historia Oaxaca">
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     JAVASCRIPT BASE
-========================= -->
-<script>
-
-// =========================
-// NAVBAR SCROLL EFFECT
-// =========================
-const navbar = document.getElementById("navbar");
-
-window.addEventListener("scroll", () => {
-  if(window.scrollY > 50){
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
-// =========================
-// MOBILE MENU
-// =========================
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// =========================
-// SCROLL REVEAL
-// =========================
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll(){
-  const windowHeight = window.innerHeight;
-
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-
-    if(top < windowHeight - 100){
-      el.classList.add("active");
-    }
-  });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
-
-</script>
-<!-- =========================
-     SABORES QUE ENAMORAN
-========================= -->
-<section id="menu" style="padding:100px 0; background:rgba(255,255,255,0.3);">
-
-  <div class="container">
-
-    <div class="reveal" style="text-align:center; margin-bottom:50px;">
-      <h2 style="font-size:2.5rem;">Sabores que enamoran</h2>
-      <p style="opacity:.8;">Tradición oaxaqueña servida con elegancia</p>
-    </div>
-
-    <!-- GRID MENU -->
-    <div class="menu-grid">
-
-      <!-- CARD -->
-      <div class="menu-card reveal">
-        <div class="img-wrapper">
-          <img src="images/menu/tlayuda.webp" alt="Tlayudas">
-          <div class="overlay">
-            Tlayuda tradicional con asiento, frijol y quesillo artesanal.
-          </div>
-        </div>
-        <h3>Tlayudas Mini</h3>
-        <p>$120 MXN</p>
-      </div>
-
-      <div class="menu-card reveal">
-        <div class="img-wrapper">
-          <img src="images/menu/quesillo.webp" alt="Quesillo">
-          <div class="overlay">
-            Quesillo artesanal recién hecho, suave y elástico.
-          </div>
-        </div>
-        <h3>Quesillo Artesanal</h3>
-        <p>$95 MXN</p>
-      </div>
-
-      <div class="menu-card reveal">
-        <div class="img-wrapper">
-          <img src="images/menu/mole.webp" alt="Mole">
-          <div class="overlay">
-            Mole negro tradicional con más de 20 ingredientes.
-          </div>
-        </div>
-        <h3>Mole Negro Oaxaqueño</h3>
-        <p>$280 MXN</p>
-      </div>
-
-      <div class="menu-card reveal">
-        <div class="img-wrapper">
-          <img src="images/menu/tasajo.webp" alt="Tasajo">
-          <div class="overlay">
-            Tasajo asado a la parrilla con sabor ahumado.
-          </div>
-        </div>
-        <h3>Tasajo Asado</h3>
-        <p>$260 MXN</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     ESTILOS DEL MENÚ
-========================= -->
 <style>
 
 /* GRID */
@@ -1096,112 +279,9 @@ revealOnScroll();
 
 </style>
 
-<!-- =========================
-     TOUCH SUPPORT (MÓVIL)
-========================= -->
-<script>
-
-// Detectar tap en móvil para mostrar overlay
-document.querySelectorAll(".menu-card").forEach(card => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("active");
-  });
-});
-
-</script>
-  <!-- =========================
-     MOMENTOS QUE INSPIRAN
-========================= -->
-
-<section id="galeria" class="gallery-section">
-
-<div class="container">
-
-    <div class="gallery-header reveal">
-
-        <h2>
-            Momentos que inspiran
-        </h2>
-
-        <p>
-            Una experiencia donde cada detalle cuenta.
-        </p>
-
-    </div>
-
-
-    <div class="carousel-wrapper">
-
-
-        <button class="gallery-btn prev" id="prevGallery">
-            ‹
-        </button>
-
-
-        <div class="carousel-window">
-
-            <div class="carousel-track" id="galleryTrack">
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/1.webp"
-                    alt="Restaurante Oaxaca">
-                </div>
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/2.webp"
-                    alt="Platillos Oaxaca">
-                </div>
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/3.webp"
-                    alt="Cocina tradicional">
-                </div>
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/4.webp"
-                    alt="Experiencia gastronómica">
-                </div>
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/5.webp"
-                    alt="Detalles restaurante">
-                </div>
-
-
-                <div class="gallery-card">
-                    <img 
-                    src="images/gallery/6.webp"
-                    alt="Comida mexicana">
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-        <button class="gallery-btn next" id="nextGallery">
-            ›
-        </button>
-
-
-    </div>
-
-</div>
-
-</section>
-
-
+<!-- =================================================================
+     style 1a.4
+==================================================================== -->
 
 <style>
 
@@ -1447,893 +527,600 @@ display:none;
 
 </style>
 
+<!-- =================================================================
+     style 1a.5
+==================================================================== -->
 
+<style>
 
-<script>
-
-
-// =========================
-// GALERÍA AUTOMÁTICA
-// =========================
-
-
-const track =
-document.getElementById("galleryTrack");
-
-
-const cards =
-document.querySelectorAll(".gallery-card");
-
-
-let galleryIndex=0;
-
-
-let autoGallery;
-
-
-
-function moveGallery(){
-
-
-galleryIndex++;
-
-
-if(galleryIndex >= cards.length){
-
-galleryIndex=0;
-
-}
-
-
-const width =
-cards[0].offsetWidth + 25;
-
-
-track.style.transform =
-`translateX(-${galleryIndex * width}px)`;
-
-
-}
-
-
-
-function startGallery(){
-
-autoGallery=setInterval(
-moveGallery,
-4500
-);
-
-}
-
-
-
-function stopGallery(){
-
-clearInterval(autoGallery);
-
-}
-
-
-
-startGallery();
-
-
-
-
-// Pausa hover desktop
-
-track.addEventListener(
-"mouseenter",
-stopGallery
-);
-
-
-track.addEventListener(
-"mouseleave",
-startGallery
-);
-
-
-
-
-// Botones
-
-
-document
-.getElementById("nextGallery")
-.addEventListener(
-"click",
-moveGallery
-);
-
-
-
-document
-.getElementById("prevGallery")
-.addEventListener(
-"click",
-()=>{
-
-
-galleryIndex--;
-
-
-if(galleryIndex<0){
-
-galleryIndex=cards.length-1;
-
-}
-
-
-const width =
-cards[0].offsetWidth +25;
-
-
-track.style.transform =
-`translateX(-${galleryIndex * width}px)`;
-
-
-}
-
-);
-
-
-
-
-
-// =========================
-// TOUCH SWIPE MOBILE
-// =========================
-
-
-let startX=0;
-
-
-track.addEventListener(
-"touchstart",
-(e)=>{
-
-startX=e.touches[0].clientX;
-
-}
-
-);
-
-
-
-track.addEventListener(
-"touchend",
-(e)=>{
-
-
-let endX=e.changedTouches[0].clientX;
-
-
-if(startX-endX >50){
-
-moveGallery();
-
-}
-
-
-
-}
-
-);
-<!-- ======================================
-     TESTIMONIOS
-     PARTE 1A.5
-======================================= -->
-
-<section id="testimonios" class="testimonials-section">
-
-
-<div class="container">
-
-
-<div class="testimonial-header reveal">
-
-<h2>
-Historias de nuestros invitados
-</h2>
-
-<p>
-La tradición oaxaqueña que nuestros clientes llevan en el corazón.
-</p>
-
-</div>
-
-
-
-<div class="testimonial-slider">
-
-
-<button class="testimonial-btn prev-testimonial">
-‹
-</button>
-
-
-
-<div class="testimonial-window">
-
-
-<div class="testimonial-track" id="testimonialTrack">
-
-
-
-<div class="testimonial-card">
-
-
-<div class="stars">
-★★★★★
-</div>
-
-
-<p>
-"El mejor mole que he probado fuera de Oaxaca.
-Cada ingrediente cuenta una historia."
-</p>
-
-
-<h4>
-María González
-</h4>
-
-
-<span>
-Ciudad de México
-</span>
-
-
-</div>
-
-
-
-
-<div class="testimonial-card">
-
-
-<div class="stars">
-★★★★★
-</div>
-
-
-<p>
-"El ambiente, la atención y los sabores hacen
-que quieras regresar cada semana."
-</p>
-
-
-<h4>
-Carlos Ramírez
-</h4>
-<span>
-Puebla
-</span>
-</div>
-<div class="testimonial-card">
-<div class="stars">
-★★★★★
-</div>
-<p>
-"Una experiencia auténtica.
-El chocolate oaxaqueño es espectacular."
-</p>
-
-
-<h4>
-Ana Torres
-</h4>
-
-
-<span>
-Guadalajara
-</span>
-
-
-</div>
-
-
-
-
-<div class="testimonial-card">
-
-
-<div class="stars">
-★★★★★
-</div>
-
-
-<p>
-"Un lugar donde la tradición y la elegancia
-se encuentran."
-</p>
-
-
-<h4>
-Luis Herrera
-</h4>
-
-
-<span>
-Monterrey
-</span>
-
-
-</div>
-
-
-
-
-</div>
-
-</div>
-
-<button class="testimonial-btn next-testimonial">
-›
-</button>
-
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-<!-- ======================================
-     CONTADORES
-     PARTE 1A.5
-======================================= -->
-
-
-<section class="stats-section">
-
-
-<div class="container stats-grid">
-
-
-
-<div class="stat-card reveal">
-
-<h3 class="counter" data-target="25">
-0
-</h3>
-
-<p>
-Años de tradición
-</p>
-
-</div>
-
-
-
-<div class="stat-card reveal">
-
-<h3 class="counter" data-target="50000">
-0
-</h3>
-
-<p>
-Clientes satisfechos
-</p>
-
-</div>
-
-
-
-
-<div class="stat-card reveal">
-
-<h3 class="counter" data-target="100">
-0
-</h3>
-
-<p>
-Recetas auténticas
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
 /* ======================================
-   TESTIMONIOS CARRUSEL
+   TESTIMONIOS
 ====================================== */
 
 
-const testimonialTrack =
-document.getElementById("testimonialTrack");
+.testimonials-section{
 
+padding:100px 0;
 
-const testimonialCards =
-document.querySelectorAll(".testimonial-card");
-
-
-let testimonialIndex=0;
-
-
-
-function moveTestimonial(){
-
-
-testimonialIndex++;
-
-
-if(testimonialIndex >= testimonialCards.length){
-
-testimonialIndex=0;
-
-}
-
-
-testimonialTrack.style.transform =
-`translateX(-${testimonialIndex*100}%)`;
-
+background:white;
 
 }
 
 
 
-setInterval(
-moveTestimonial,
-5000
-);
+.testimonial-header{
 
+text-align:center;
 
-
-
-document
-.querySelector(".next-testimonial")
-.addEventListener(
-"click",
-moveTestimonial
-);
-
-
-
-
-document
-.querySelector(".prev-testimonial")
-.addEventListener(
-"click",
-()=>{
-
-
-testimonialIndex--;
-
-
-if(testimonialIndex<0){
-
-testimonialIndex=
-testimonialCards.length-1;
+margin-bottom:50px;
 
 }
 
 
-testimonialTrack.style.transform =
-`translateX(-${testimonialIndex*100}%)`;
+
+.testimonial-header h2{
+
+font-size:2.5rem;
+
+color:var(--cafe);
 
 }
 
-);
+
+
+
+.testimonial-slider{
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+}
+
+
+
+.testimonial-window{
+
+overflow:hidden;
+
+width:100%;
+
+}
+
+
+
+.testimonial-track{
+
+display:flex;
+
+transition:.6s ease;
+
+}
+
+
+
+.testimonial-card{
+
+min-width:100%;
+
+padding:45px;
+
+text-align:center;
+
+background:var(--beige);
+
+border-radius:25px;
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.1);
+
+}
+
+
+
+.stars{
+
+color:var(--naranja);
+
+font-size:28px;
+
+letter-spacing:5px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.testimonial-card p{
+
+font-size:1.2rem;
+
+font-style:italic;
+
+line-height:1.7;
+
+}
+
+
+
+.testimonial-card h4{
+
+margin-top:25px;
+
+color:var(--cafe);
+
+}
+
+
+
+.testimonial-card span{
+
+opacity:.7;
+
+}
+
+
+
+
+.testimonial-btn{
+
+position:absolute;
+
+z-index:2;
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+border:none;
+
+background:var(--cafe);
+
+color:white;
+
+font-size:28px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.testimonial-btn:hover{
+
+transform:scale(1.15);
+
+background:var(--naranja);
+
+}
+
+
+
+.prev-testimonial{
+
+left:-15px;
+
+}
+
+
+
+.next-testimonial{
+
+right:-15px;
+
+}
 
 
 
 
 
 /* ======================================
-   CONTADORES ANIMADOS
+   CONTADORES
 ====================================== */
 
 
-const counters =
-document.querySelectorAll(".counter");
+.stats-section{
 
+padding:80px 0;
 
-let started=false;
+background:var(--cafe);
 
-
-
-function startCounters(){
-
-
-if(started)return;
-
-
-const section =
-document.querySelector(".stats-section");
-
-
-const position =
-section.getBoundingClientRect().top;
-
-
-
-if(position < window.innerHeight-100){
-
-
-started=true;
-
-
-
-counters.forEach(counter=>{
-
-
-let target =
-+counter.dataset.target;
-
-
-let count=0;
-
-
-let speed =
-target/100;
-
-
-
-const update=()=>{
-
-
-count += speed;
-
-
-if(count < target){
-
-counter.innerText =
-Math.floor(count);
-
-requestAnimationFrame(update);
-
-
-}else{
-
-
-counter.innerText =
-target.toLocaleString();
-
-}
-
-
-};
-
-
-update();
-
-
-});
-
-
-}
-
+color:white;
 
 }
 
 
 
-window.addEventListener(
-"scroll",
-startCounters
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.stat-card{
+
+text-align:center;
+
+}
+
+
+
+.stat-card h3{
+
+font-size:3rem;
+
+color:var(--naranja);
+
+}
+
+
+
+.stat-card p{
+
+font-size:1.1rem;
+
+}
+
+@media(max-width:768px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+}
+
+.testimonial-card{
+
+padding:30px 20px;
+}
+
+}
+</style>
+
+<!-- =================================================================
+     style 1a.6
+==================================================================== -->
+
+<style>
+/* ======================================
+   RESERVACIONES
+====================================== */
+
+.reservation-section{
+padding:100px 0;
+background:#fff;
+}
+
+.reservation-header{
+text-align:center;
+margin-bottom:45px;
+}
+
+.reservation-header h2{
+font-size:2.5rem;
+color:var(--cafe);
+}
+
+.reservation-header p{
+margin-top:10px;
+opacity:.75;
+}
+
+.reservation-box{
+background:var(--beige);
+padding:40px;
+border-radius:30px;
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.form-group label{
+font-weight:600;
+color:var(--cafe);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+padding:14px;
+border-radius:15px;
+border:1px solid rgba(74,44,26,.2);
+font-size:1rem;
+background:white;
+outline:none;
+transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+border-color:var(--naranja);
+transform:scale(1.02);
+}
+
+textarea{
+min-height:120px;
+resize:none;
+}
+
+.full{
+margin-top:20px;
+}
+
+.submit-btn{
+margin-top:25px;
+border:none;
+}
+
+
+/* MODAL */
+
+.modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:2000;
+}
+
+.modal.active{
+display:flex;
+}
+
+.modal-content{
+background:white;
+padding:40px;
+border-radius:25px;
+text-align:center;
+max-width:400px;
+animation:modalIn .4s ease;
+}
+
+.modal-content h3{
+color:var(--cafe);
+font-size:1.8rem;
+margin-bottom:15px;
+}
+
+@keyframes modalIn{
+from{
+opacity:0;
+transform:translateY(30px) scale(.9);
+}
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+
+@media(max-width:768px){
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.reservation-box{
+padding:25px;
+}
+
+}
+</style>
+
+<!-- =================================================================
+    style 1a.7
+==================================================================== -->
+<style>
+/* ======================================
+   UBICACIÓN
+====================================== */
+
+.location-section{
+padding:100px 0;
+background:var(--beige);
+}
+
+.location-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.location-info h2{
+font-size:2.5rem;
+color:var(--cafe);
+margin-bottom:20px;
+}
+
+.location-info p{
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.info-item{
+display:flex;
+flex-direction:column;
+gap:5px;
+margin-bottom:18px;
+}
+
+.info-item strong{
+color:var(--naranja);
+}
+
+
+/* MAPA */
+
+.map-card{
+background:white;
+padding:15px;
+border-radius:30px;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+
+.fake-map{
+height:420px;
+border-radius:22px;
+background:
+linear-gradient(
+135deg,
+#d9c7ad,
+#f5e6d3
 );
-<!-- ======================================
-     RESERVACIONES
-     PARTE 1A.6
-======================================= -->
-
-<section id="reserva" class="reservation-section">
-
-<div class="container">
-
-<div class="reservation-header reveal">
-<h2>Reserva tu experiencia</h2>
-<p>Déjanos preparar una mesa especial para ti.</p>
-</div>
-
-<div class="reservation-box reveal">
-
-<form id="reservationForm">
-
-<div class="form-grid">
-
-<div class="form-group">
-<label>Nombre</label>
-<input type="text" id="name" required placeholder="Tu nombre">
-</div>
-
-<div class="form-group">
-<label>Teléfono</label>
-<input type="tel" id="phone" required placeholder="55 1234 5678">
-</div>
-
-<div class="form-group">
-<label>Correo</label>
-<input type="email" id="email" required placeholder="correo@email.com">
-</div>
-
-<div class="form-group">
-<label>Fecha</label>
-<input type="date" id="date" required>
-</div>
-
-<div class="form-group">
-<label>Hora</label>
-<select id="time" required>
-<option value="">Selecciona</option>
-<option>13:00</option>
-<option>15:00</option>
-<option>18:00</option>
-<option>20:00</option>
-</select>
-</div>
-
-<div class="form-group">
-<label>Número de personas</label>
-<select id="people" required>
-<option value="">Selecciona</option>
-<option>1 persona</option>
-<option>2 personas</option>
-<option>4 personas</option>
-<option>6 personas</option>
-<option>10+ personas</option>
-</select>
-</div>
-
-</div>
-
-<div class="form-group full">
-<label>Comentarios especiales</label>
-<textarea id="comments" placeholder="Cumpleaños, aniversario, alguna solicitud especial..."></textarea>
-</div>
-
-<button class="btn btn-primary submit-btn" type="submit">
-Confirmar Reserva
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+position:relative;
+overflow:hidden;
+}
 
 
-<!-- MODAL CONFIRMACION -->
+.fake-map:before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+border-radius:50%;
+border:2px dashed rgba(74,44,26,.2);
+}
 
-<div class="modal" id="reservationModal">
 
-<div class="modal-content">
+.map-pin{
+font-size:45px;
+z-index:2;
+animation:pulsePin 2s infinite;
+}
 
-<h3>¡Gracias por reservar!</h3>
 
-<p>
-Tu experiencia en El Sabor Oaxaqueño comienza aquí.
-</p>
+.map-label{
+margin-top:15px;
+background:white;
+padding:10px 20px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+z-index:2;
+}
 
-<button class="btn btn-primary" id="closeModal">
-Cerrar
-</button>
 
-</div>
+@keyframes pulsePin{
 
-</div>
+50%{
+transform:scale(1.15);
+}
+
+}
+
 
 /* ======================================
-   RESERVACION MODAL
+   FOOTER
 ====================================== */
 
-const reservationForm=document.getElementById("reservationForm");
-const reservationModal=document.getElementById("reservationModal");
-const closeModal=document.getElementById("closeModal");
-
-reservationForm.addEventListener("submit",(e)=>{
-e.preventDefault();
-
-const name=document.getElementById("name").value;
-const phone=document.getElementById("phone").value;
-const email=document.getElementById("email").value;
-
-if(!name || !phone || !email){
-alert("Por favor completa los campos obligatorios.");
-return;
+.footer{
+background:var(--cafe);
+color:white;
+padding:60px 0 20px;
 }
 
-reservationModal.classList.add("active");
 
-reservationForm.reset();
-
-});
-
-
-closeModal.addEventListener("click",()=>{
-reservationModal.classList.remove("active");
-});
-
-
-reservationModal.addEventListener("click",(e)=>{
-if(e.target===reservationModal){
-reservationModal.classList.remove("active");
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
 }
-});
-<!-- ======================================
-     UBICACIÓN
-     PARTE 1A.7
-======================================= -->
-
-<section id="ubicacion" class="location-section">
-
-<div class="container">
-
-<div class="location-grid">
-
-<div class="location-info reveal">
-
-<h2>
-Visítanos en Oaxaca
-</h2>
-
-<p>
-Ven a disfrutar una experiencia gastronómica llena de tradición, cultura y sabores auténticos.
-</p>
-
-<div class="info-item">
-<strong>📍 Dirección</strong>
-<span>
-Av. Reforma 1234<br>
-Centro Histórico<br>
-Ciudad de México
-</span>
-</div>
-
-<div class="info-item">
-<strong>🕒 Horarios</strong>
-<span>
-Lunes - Domingo<br>
-13:00 PM - 22:00 PM
-</span>
-</div>
-
-<div class="info-item">
-<strong>☎ Teléfono</strong>
-<span>
-55 1234 5678
-</span>
-</div>
-
-<div class="info-item">
-<strong>✉ Correo</strong>
-<span>
-reservas@elsaboroaxaqueno.com
-</span>
-</div>
-
-</div>
 
 
-<!-- MAPA FICTICIO -->
-
-<div class="map-card reveal">
-
-<div class="fake-map">
-
-<div class="map-pin">
-📍
-</div>
-
-<div class="map-label">
-El Sabor Oaxaqueño
-</div>
-
-</div>
-
-</div>
+.footer-logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
 
 
-</div>
-
-</div>
-
-</section>
-
+.footer h4{
+color:var(--naranja);
+margin-bottom:15px;
+}
 
 
-<!-- ======================================
-     FOOTER
-======================================= -->
-
-<footer class="footer">
-
-
-<div class="container footer-grid">
+.footer p{
+opacity:.85;
+line-height:1.6;
+}
 
 
-<div class="footer-brand">
-
-<div class="footer-logo">
-
-<svg width="45" height="45" viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="48" fill="#C96A3D"/>
-<path d="M30 60 Q50 25 70 60" stroke="white" stroke-width="6" fill="none"/>
-<circle cx="50" cy="52" r="10" fill="white"/>
-</svg>
-
-<h3>
-El Sabor Oaxaqueño
-</h3>
-
-</div>
-
-<p>
-Tradición mexicana en cada platillo.
-</p>
-
-</div>
+.social-links{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
 
 
-
-<div>
-
-<h4>
-Horarios
-</h4>
-
-<p>
-Lunes - Domingo
-</p>
-
-<p>
-13:00 - 22:00
-</p>
-
-</div>
+.social-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
 
 
-
-<div>
-
-<h4>
-Síguenos
-</h4>
-
-<div class="social-links">
-
-<a href="#">
-Facebook
-</a>
-
-<a href="#">
-Instagram
-</a>
-
-<a href="#">
-TikTok
-</a>
-
-</div>
-
-</div>
+.social-links a:hover{
+color:var(--naranja);
+transform:translateX(5px);
+}
 
 
-</div>
+.footer-bottom{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.15);
+opacity:.7;
+}
 
 
+@media(max-width:768px){
 
-<div class="footer-bottom">
+.location-grid{
+grid-template-columns:1fr;
+}
 
-© 2026 El Sabor Oaxaqueño. Todos los derechos reservados.
+.footer-grid{
+grid-template-columns:1fr;
+}
 
-</div>
+.fake-map{
+height:300px;
+}
 
+}
+</style>
 
-</footer>
-</script>
-</body>
+</head>
