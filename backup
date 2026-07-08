@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Sabor Oaxaqueño</title>
+<style>
+:root{
+--terracota:#C96A3D;--naranja:#D97706;--beige:#F5E6D3;--cafe:#4A2C1A;--agave:#4F6F52;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--beige);color:var(--cafe);overflow-x:hidden}
+.nav{position:fixed;top:0;width:100%;z-index:99;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;transition:.4s;background:rgba(0,0,0,.08)}
+.nav.scrolled{background:rgba(74,44,26,.95)}
+.logo{display:flex;gap:10px;align-items:center;color:#fff;font-weight:700}
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:120px 5% 60px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+
+    url("images/el saborsito oaxaqueño.png");
+
+    background-size:cover;
+
+    background-position:center;
+}
+h1{font-size:clamp(2.5rem,6vw,5rem);margin:0}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;margin:8px;transition:.3s}
+.primary{background:var(--naranja);color:#fff}
+.secondary{border:2px solid #fff;color:#fff}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+section{padding:90px 5%}
+.grid{display:grid;gap:24px}
+.story{grid-template-columns:1fr 1fr}
+.card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.menu-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.imgph{height:180px;border-radius:18px;background:linear-gradient(135deg,var(--terracota),var(--naranja))}
+.gallery{columns:3 260px;gap:16px}
+.gallery div{height:220px;margin-bottom:16px;border-radius:18px;background:linear-gradient(135deg,var(--agave),var(--terracota));cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+.num{font-size:3rem;font-weight:800;color:var(--naranja)}
+.testimonial{max-width:800px;margin:auto;text-align:center}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+input,textarea{padding:12px;border-radius:12px;border:1px solid #ddd}
+footer{background:var(--cafe);color:#fff;padding:40px 5%}
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+#mobile{display:none}
+.links a{color:#fff;text-decoration:none;margin:0 10px}
+.modal,.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:999}
+.modal-content{background:#fff;padding:30px;border-radius:20px}
+@media(max-width:768px){
+.story{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr}
+.links{display:none}
+#mobile{display:block;color:#fff;font-size:28px;background:none;border:none}
+.links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:var(--cafe);flex-direction:column;padding:20px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+<div class="logo">
+<svg width="42" height="42" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="46" fill="#C96A3D"/>
+<path d="M25 60 Q50 20 75 60" fill="none" stroke="white" stroke-width="6"/>
+<circle cx="50" cy="52" r="12" fill="white"/>
+</svg>
+<span>El Sabor Oaxaqueño</span>
+</div>
+<button id="mobile">☰</button>
+<div class="links" id="links">
+<a href="#historia">Historia</a>
+<a href="#menu">Menú</a>
+<a href="#galeria">Galería</a>
+<a href="#reserva">Reservar</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-content reveal">
+<h1>Auténticos sabores de Oaxaca en cada platillo</h1>
+<p>Tradición, cultura y gastronomía en una experiencia única.</p>
+<a href="#reserva" class="btn primary">Reservar Ahora</a>
+<a href="#menu" class="btn secondary">Ver Menú</a>
+</div>
+</header>
+
+<section>
+<div class="stats">
+<div><div class="num" data-n="25">0</div>Años de tradición</div>
+<div><div class="num" data-n="50000">0</div>Clientes satisfechos</div>
+<div><div class="num" data-n="100">0</div>Recetas auténticas</div>
+</div>
+</section>
+
+<section id="historia" class="grid story reveal">
+<div>
+<h2>Nuestra Historia</h2>
+<p>Desde 1998, El Sabor Oaxaqueño ha compartido recetas tradicionales transmitidas por generaciones, llevando la riqueza culinaria de Oaxaca a cada mesa.</p>
+</div>
+<img
+src="images/NuestraHistoria.jpg"
+alt="Cocina tradicional oaxaqueña"
+class="section-image">
+</section>
+
+<section id="menu">
+<h2>Menú Destacado</h2>
+<div class="grid menu-grid">
+<div class="card"><div class="imgph"></div><h3>Tlayudas Mini</h3><p>$120 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Quesillo Artesanal</h3><p>$95 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Memelitas Tradicionales</h3><p>$110 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Mole Negro Oaxaqueño</h3><p>$280 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Tasajo Asado</h3><p>$260 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Enchiladas de Coloradito</h3><p>$240 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Chocolate Oaxaqueño</h3><p>$70 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Mezcal de la Casa</h3><p>$180 MXN</p></div>
+<div class="card"><div class="imgph"></div><h3>Nicuatole</h3><p>$90 MXN</p></div>
+</div>
+</section>
+
+<section id="galeria" class="reveal">
+<h2>Galería</h2>
+<div class="gallery">
+<div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+</section>
+
+<section class="reveal">
+<h2>Testimonios</h2>
+<div class="testimonial">
+<p id="test">★★★★★ El mejor mole que he probado fuera de Oaxaca.</p>
+</div>
+</section>
+
+<section id="reserva" class="reveal">
+<h2>Reservaciones</h2>
+<form id="form" class="form">
+<input required placeholder="Nombre">
+<input required placeholder="Teléfono">
+<input required type="email" placeholder="Correo">
+<input required type="date">
+<input required type="time">
+<input required type="number" placeholder="Personas">
+<textarea placeholder="Comentarios"></textarea>
+<button class="btn primary">Confirmar Reserva</button>
+</form>
+</section>
+
+<section class="reveal">
+<h2>Ubicación</h2>
+<div class="card">
+<p>Av. Reforma 1234, Centro Histórico, Ciudad de México</p>
+<p>Tel: (55) 5555-5555</p>
+<p>contacto@saboroaxaqueno.mx</p>
+<p>Lun-Dom 12:00 - 23:00</p>
+<div class="imgph"></div>
+</div>
+</section>
+
+<footer>
+<h3>El Sabor Oaxaqueño</h3>
+<p>© 2026 Todos los derechos reservados.</p>
+</footer>
+
+<div class="modal" id="modal"><div class="modal-content"><h2>¡Gracias por reservar en El Sabor Oaxaqueño!</h2></div></div>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50));
+
+document.getElementById('mobile').onclick=()=>document.getElementById('links').classList.toggle('open');
+
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}));
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+document.querySelectorAll('.num').forEach(el=>{
+ let target=+el.dataset.n,c=0;
+ let i=setInterval(()=>{c+=Math.ceil(target/80);if(c>=target){c=target;clearInterval(i)}el.textContent=c.toLocaleString()},25);
+});
+
+const testimonials=[
+"★★★★★ El mejor mole que he probado fuera de Oaxaca.",
+"★★★★★ Servicio impecable y ambiente espectacular.",
+"★★★★★ Las tlayudas son extraordinarias.",
+"★★★★★ Una experiencia gastronómica auténtica."
+];
+let t=0;
+setInterval(()=>{
+t=(t+1)%testimonials.length;
+document.getElementById('test').textContent=testimonials[t];
+},4000);
+
+document.getElementById('form').addEventListener('submit',e=>{
+e.preventDefault();
+document.getElementById('modal').style.display='flex';
+});
+document.getElementById('modal').onclick=()=>modal.style.display='none';
+</script>
+</body>
+</html>
