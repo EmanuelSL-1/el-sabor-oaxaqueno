@@ -1230,7 +1230,7 @@ height:300px;
 
       <!-- IMAGEN PLACEHOLDER -->
       <div>
-        <img src="images/historia/historia.webp" alt="Historia Oaxaca">
+        <img src="images/NuestraHistoria.jpg" alt="Historia Oaxaca">
       </div>
 
     </div>
@@ -1261,7 +1261,7 @@ height:300px;
       <!-- CARD -->
       <div class="menu-card reveal">
         <div class="img-wrapper">
-          <img src="images/menu/tlayuda.webp" alt="Tlayudas">
+          <img src="images/TlayudasMini.jpg" alt="Tlayudas">
           <div class="overlay">
             Tlayuda tradicional con asiento, frijol y quesillo artesanal.
           </div>
@@ -1272,7 +1272,7 @@ height:300px;
 
       <div class="menu-card reveal">
         <div class="img-wrapper">
-          <img src="images/menu/quesillo.webp" alt="Quesillo">
+          <img src="images/Bolitas.jpg" alt="Quesillo">
           <div class="overlay">
             Quesillo artesanal recién hecho, suave y elástico.
           </div>
@@ -1283,7 +1283,7 @@ height:300px;
 
       <div class="menu-card reveal">
         <div class="img-wrapper">
-          <img src="images/menu/mole.webp" alt="Mole">
+          <img src="images/MoleNegro.jpg" alt="Mole">
           <div class="overlay">
             Mole negro tradicional con más de 20 ingredientes.
           </div>
@@ -1345,42 +1345,42 @@ height:300px;
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/1.webp"
+                    src="images/Galeria1.jpg"
                     alt="Restaurante Oaxaca">
                 </div>
 
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/2.webp"
+                    src="images/Galeria2.jpg"
                     alt="Platillos Oaxaca">
                 </div>
 
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/3.webp"
+                    src="images/Galeria3.jpg"
                     alt="Cocina tradicional">
                 </div>
 
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/4.webp"
+                    src="images/Galeria4.jpg"
                     alt="Experiencia gastronómica">
                 </div>
 
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/5.webp"
+                    src="images/Galeria5.jpg"
                     alt="Detalles restaurante">
                 </div>
 
 
                 <div class="gallery-card">
                     <img 
-                    src="images/gallery/6.webp"
+                    src="images/Galeria6.jpg"
                     alt="Comida mexicana">
                 </div>
 
