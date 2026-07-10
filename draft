@@ -133,15 +133,24 @@ img:hover{
 
 /* LOGO */
 .logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:800;
-  color:var(--cafe);
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-.navbar.scrolled .logo{
-  color:white;
+.logo-text{
+display:flex;
+flex-direction:column;
+}
+
+.logo-text span{
+font-weight:800;
+font-size:1.1rem;
+}
+
+.logo-text small{
+font-size:.75rem;
+opacity:.8;
 }
 
 /* MENU */
@@ -1058,10 +1067,10 @@ gap:40px;
 }
 
 
-.footer-logo{
-display:flex;
-align-items:center;
-gap:15px;
+.footer-logo img{
+width:55px;
+height:55px;
+object-fit:contain;
 }
 
 
@@ -1137,15 +1146,16 @@ height:300px;
 <nav class="navbar" id="navbar">
 
   <!-- LOGO -->
-  <div class="logo">
-    <!-- SVG logo simple premium -->
-    <svg width="34" height="34" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="48" fill="#C96A3D"/>
-      <path d="M30 60 Q50 25 70 60" stroke="white" stroke-width="6" fill="none"/>
-      <circle cx="50" cy="52" r="10" fill="white"/>
-    </svg>
-    <span>El Sabor Oaxaqueño</span>
-  </div>
+<div class="logo">
+
+   <img src="images/el sabor oaxaqueño.png" alt="Logo El Sabor Oaxaqueño">
+   
+   <div class="logo-text">
+      <span>El Sabor Oaxaqueño</span>
+      <small>Cocina tradicional mexicana</small>
+   </div>
+
+</div>
 
   <!-- LINKS -->
   <div class="nav-links" id="navLinks">
@@ -1816,11 +1826,9 @@ El Sabor Oaxaqueño
 
 <div class="footer-logo">
 
-<svg width="45" height="45" viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="48" fill="#C96A3D"/>
-<path d="M30 60 Q50 25 70 60" stroke="white" stroke-width="6" fill="none"/>
-<circle cx="50" cy="52" r="10" fill="white"/>
-</svg>
+<img 
+src="images/el sabor oaxaqueño.png"
+alt="El Sabor Oaxaqueño">
 
 <h3>
 El Sabor Oaxaqueño
